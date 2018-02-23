@@ -2,7 +2,8 @@
     "name": "theseedv2",
     "version": "1.0.0",
     "scripts": {
-        "build": "rm -rf ./build && cd backend && yarn build && cd ../frontend && yarn build"
+        "build": "rm -rf ./build && cd backend && yarn build && cd ../frontend && yarn build",
+        "start": "node ./build/backend/index.js"
     },
     "author" : "Sungmin Kim",
     "license": "ISC"
