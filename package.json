@@ -1,0 +1,9 @@
+{
+    "name": "theseedv2",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "rm -rf ./build && cd backend && yarn build && cd ../frontend && yarn build"
+    },
+    "author" : "Sungmin Kim",
+    "license": "ISC"
+}
