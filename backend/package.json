@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "d": "nodemon src/index.js --exec babel-node index.js --presets es2015",
+    "d": "NODE_ENV=devleopment nodemon src/index.js --exec babel-node index.js --presets es2015",
     "build": "babel src -d ../build/backend --presets es2015 && cp ./package.json ../build/backend"
   },
   "dependencies": {
