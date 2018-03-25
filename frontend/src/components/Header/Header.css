@@ -6,10 +6,17 @@ header{
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     z-index: 2;
+}
+
+header > .logo{
+    margin-left: 5%;
+    font-size: 2rem;
+    font-weight: 100;
+    z-index: 4;
 }
 
 header > .search{
@@ -59,12 +66,7 @@ header > .search > .searchBox > input.focus{
     background: #fff;
 }
 
-header > .logo{
-    font-size: 2rem;
-    font-weight: 100;
-    z-index: 4;
-}
-
 header > .menus{
     z-index: 4;
+    margin-right: 5%;
 }

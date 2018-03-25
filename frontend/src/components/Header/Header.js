@@ -6,12 +6,19 @@ import './Header.css'
 class Header extends Component {
     
     state = {
-        isFocus: false
+        isFocus: false,
+        searchText: ''
     }
 
     toggleFocus = () => {
         this.setState({
             isFocus: !this.state.isFocus
+        })
+    }
+
+    onChangeSearch = (e) => {
+        this.setState({
+            searchText: e.target.value
         })
     }
 
@@ -27,6 +34,8 @@ class Header extends Component {
                         onFocus={this.toggleFocus} 
                         onBlur={this.toggleFocus} 
                         className={this.state.isFocus ? 'focus' : undefined}
+                        onChange={this.onChangeSearch}
+                        value={this.state.searchText}
                         />
                    </div> 
                 </section>
