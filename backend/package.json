@@ -6,6 +6,7 @@
     "build": "babel src -d ../build/backend --presets es2015 && cp ./package.json ../build/backend"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "compression": "^1.7.2",
     "connect-mongo": "^2.0.1",
