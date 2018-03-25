@@ -10,6 +10,7 @@ class Main extends Component {
     render() {
         return (
             <div>
+                {/* todo robots.txt */}
                 <MainTemplate
                     info={<Info/>}
                 />
