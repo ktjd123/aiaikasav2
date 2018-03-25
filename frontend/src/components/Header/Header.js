@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
+
 import FaSearch from 'react-icons/lib/fa/search'
+import FaStar from 'react-icons/lib/fa/star'
+import FaBell from 'react-icons/lib/fa/bell'
+
 import './Header.css'
 
 class Header extends Component {
@@ -40,7 +44,9 @@ class Header extends Component {
                    </div> 
                 </section>
                 <section className='menus'>
-                    lorem ipsum
+                    <Link to='/star'><FaStar/></Link>
+                    <a><FaBell/></a>
+                    peter
                 </section>
             </header>
         );
