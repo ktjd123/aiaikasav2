@@ -10,14 +10,7 @@ import './Header.css'
 class Header extends Component {
     
     state = {
-        isFocus: false,
         searchText: ''
-    }
-
-    toggleFocus = () => {
-        this.setState({
-            isFocus: !this.state.isFocus
-        })
     }
 
     onChangeSearch = (e) => {
@@ -31,13 +24,10 @@ class Header extends Component {
             <header>
                 <Link to='/' className='logo' onClick={() => window.scroll(0,0)} >AIAIKASA</Link>
                 <section className='search'>
-                   <div className={`searchBox ${this.state.isFocus ? 'focus': undefined}`}>
+                   <div className='searchBox'>
                         <i><FaSearch/></i>
                         <input type='text' 
-                        placeholder='모든걸 검색해보세요' 
-                        onFocus={this.toggleFocus} 
-                        onBlur={this.toggleFocus} 
-                        className={this.state.isFocus ? 'focus' : undefined}
+                        placeholder='모든걸 검색해보세요'
                         onChange={this.onChangeSearch}
                         value={this.state.searchText}
                         />
@@ -46,7 +36,7 @@ class Header extends Component {
                 <section className='menus'>
                     <Link to='/star'><FaStar/></Link>
                     <a><FaBell/></a>
-                    peter
+                    <Link to='/ktjd123'>peter</Link>
                 </section>
             </header>
         );

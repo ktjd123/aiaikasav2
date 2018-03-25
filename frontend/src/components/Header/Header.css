@@ -36,16 +36,12 @@ header > .search > .searchBox{
     width: 190px;
     height: 30px;
     border: 1px solid #ddd;
-    background: #ddd;
+    background: #fff;
     color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all 0.3s;
-}
-
-header > .search > .searchBox.focus{
-    background: #fff;
 }
 
 header > .search > .searchBox > i{
@@ -56,14 +52,10 @@ header > .search > .searchBox > i{
 header > .search > .searchBox > input{
     width: 80%;
     height: 80%;
-    background: #ddd;
+    background: #fff;
     border: none;
     font-size: 1rem;
     transition: all 0.3s;
-}
-
-header > .search > .searchBox > input.focus{
-    background: #fff;
 }
 
 header > .menus{
