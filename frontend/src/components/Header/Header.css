@@ -1,0 +1,70 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+header > .search{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+header > .search > .searchBox{
+    width: 190px;
+    height: 30px;
+    border: 1px solid #eee;
+    background: #eee;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+
+header > .search > .searchBox.focus{
+    background: #fff;
+}
+
+header > .search > .searchBox > i{
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+header > .search > .searchBox > input{
+    width: 80%;
+    height: 80%;
+    background: #eee;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+header > .search > .searchBox > input.focus{
+    background: #fff;
+}
+
+header > .logo{
+    font-size: 2rem;
+    font-weight: 100;
+    z-index: 4;
+}
+
+header > .menus{
+    z-index: 4;
+}
