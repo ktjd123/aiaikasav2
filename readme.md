@@ -1,7 +1,4 @@
 <h1>
-    this is theSeed v2
-
-    mongodb
-    express
-    react stack
+    This is for aiaikasa V2 site not.
+    is not for demo.
 </h1>
