@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {MainTemplate, Info} from 'components'
+import {Header, MainTemplate, Info} from 'components'
 import {toast} from 'react-toastify'
 
 class Main extends Component {
@@ -10,6 +10,7 @@ class Main extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 {/* todo robots.txt */}
                 <MainTemplate
                     info={<Info/>}

@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
+import { css } from 'glamor'
 
 ReactDOM.render(
     <BrowserRouter>
@@ -13,6 +14,9 @@ ReactDOM.render(
             <ToastContainer
                 autoClose={3000}
                 position="bottom-center"
+                toastClassName={css({
+                    background: 'black'
+                })}
             />
             <Switch>
                 <Route path='/' component={Main} />
