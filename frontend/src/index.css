@@ -3,13 +3,34 @@ body {
   margin-top: 80px;
   padding: 0;
   font-family: sans-serif;
+  background: #f1f3f5;
 }
 
-a{
+a {
   color: black;
   text-decoration: none;
 }
 
-*{
+* {
   outline: none;
+}
+
+.button {
+  background: black;
+  color: white;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.button.inverted {
+  background: white;
+  color: black;
+  border: 1px solid black;
 }

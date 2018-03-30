@@ -3,7 +3,7 @@ import './MainTemplate.css'
 
 const MainTemplate = ({info}) => {
     return (
-        <div>
+        <div className='mainTemplate' >
             <section>
                 {info}
             </section>
