@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Header, MainTemplate, Info} from 'components'
+import {Header, MainTemplate, Info, Card} from 'components'
 
 class Main extends Component {
     render() {
@@ -7,7 +7,7 @@ class Main extends Component {
             <div>
                 <Header/>
                 <MainTemplate
-                    info={<Info/>}
+                    info={<Card/>}
                 />
             </div>
         );
