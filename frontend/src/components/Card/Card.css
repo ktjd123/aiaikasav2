@@ -39,3 +39,11 @@
 .card > .info > .time{
     padding-right: 10px;
 }
+
+.card > .main{
+    position: relative;
+    max-height: 600px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

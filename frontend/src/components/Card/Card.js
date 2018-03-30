@@ -20,6 +20,12 @@ class Card extends Component {
                         <TimeAgo formatter={formatter} date='3290' />
                     </Link>
                 </section>
+                <section className='main'>
+                    
+                </section>
+                <section className='reaction'>
+                    
+                </section>
             </div>
         );
     }
